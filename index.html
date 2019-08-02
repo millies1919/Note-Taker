@@ -5,15 +5,17 @@
         <script src="index.js"></script>
         <title>Note Taker</title>
     </head>
-    <body class="body" id="body" onload="addButton()">
+    <body class="body" id="body" onload="onLoad()">
+        <h1>Note Taking App</h1>
+        <div id="initialconatiner" onload="addButton()">
             <button class="add" onclick="addButton()">Add</button>
-        <div hidden>
-            <div class="container-template" id="container-template">  
-                <h1 class="title">Note Taker</h1>
-                <button class="save">Save</button>
-                <button class="delete" onclick="deleteButton(this)">Delete</button>
-            <br>
-                <textarea class="note"></textarea>
+            <div hidden>
+                <div class="container-template" id="container-template">  
+                    <button class="save">Save</button>
+                    <button class="delete" onclick="deleteButton(this)">Delete</button>
+                <br>
+                    <textarea class="note"></textarea>
+                </div>
             </div>
         </div>
     </body>
