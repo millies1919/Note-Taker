@@ -11,10 +11,11 @@
             <button class="add" onclick="addButton()">Add</button>
             <div hidden>
                 <div class="container-template" id="container-template">  
-                    <button class="save">Save</button>
+                    <button class="save" onclick="saveButton(this)">Save</button>
+                    <input type="text" class="title" placeholder="Note Title:">
                     <button class="delete" onclick="deleteButton(this)">Delete</button>
                 <br>
-                    <textarea class="note"></textarea>
+                    <textarea class="note" placeholder="Write your notes here:"></textarea>
                 </div>
             </div>
         </div>
